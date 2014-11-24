@@ -206,7 +206,7 @@ class PdfFileMerger(object):
             file-like object.
         """
         my_file = False
-        if type(fileobj) in (str, str):
+        if type(fileobj) in (str, unicode):
             fileobj = file(fileobj, 'wb')
             my_file = True
 
